@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter&family=Montserrat:wght@300&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@600&family=Raleway:wght@600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__top">
+            <a class="header__logo" href="#">
+                <img class="header__img" src="img/2logo.svg" alt="menu button" >
+            </a>
+            <ul class="header__main">
+                <li class="main__item">
+                    <a class="main__link" href="#">Home</a>
+                </li>
+                <li class="main__item">
+                    <a class="main__link" href="about.html">About Us</a>
+                </li>
+                <li class="main__item">
+                    <a class="main__link" href="#">Services</a>
+                </li>
+                <li class="main__item">
+                    <a class="main__link" href="#">Gallery</a>
+                </li>
+                <li class="main__item">
+                    <a class="main__link" href="#">Blog</a>
+                </li>
+                <li class="main__item">
+                    <a class="main__link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="header__buttons">
+                <a class="header__buttons">
+                    <img class="header__profile" src="img/profile.svg" alt="#">
+                <a>
+                <a class="header__buttons">
+                    <img class="header__notification" src="img/codicon.svg" alt="#">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content__checkout">
+            <h1 class="content__checkout-title">Choose your tree here:</h1>
+            <div class="content__checkout-trees" style="height: 1000px; overflow:hidden;">
+                <div class="content__checkout-trees-inner" style="width: 350px;height: 546px;overflow-y: scroll;">
+                    <div class="content__checkout-tree">
+                        <div class="trees-img">
+                            <img class="tree-img" src="img/spruce.svg" alt="#">
+                        </div>
+                        <div class="trees-name">
+                            <h1 class="tree-title">Spruce</h1>
+                            <div class="tree-numbers">
+                                <input class="pluss" type="button" onclick="downValue()" value="-" />
+                                <input class="number "type="text" id="number" value="0"/>
+                                <input class="minus" type="button" onclick="incrementValue()" value="+" />
+                            </div>
+                        </div>
+                        <div class="trees-prise">
+                            <h1 class="tree-prise">$120</h1>
+                        </div>
+                    </div>
+                    <div class="content__checkout-tree">
+                        <div class="trees-img">
+                            <img class="tree-img" src="img/oak.svg" alt="#">
+                        </div>
+                        <div class="trees-name">
+                            <h1 class="tree-title">Oak</h1>
+                            <div class="tree-numbers">
+                                <input class="pluss" type="button" onclick="downValue()" value="-" />
+                                <input class="number "type="text" id="number" value="0"/>
+                                <input class="minus" type="button" onclick="incrementValue()" value="+" />
+                            </div>
+                        </div>
+                        <div class="trees-prise">
+                            <h1 class="tree-prise">$120</h1>
+                        </div>
+                    </div>
+                    <div class="content__checkout-tree">
+                        <div class="trees-img">
+                            <img class="tree-img" src="img/Maple.svg" alt="#">
+                        </div>
+                        <div class="trees-name">
+                            <h1 class="tree-title">Maple</h1>
+                            <div class="tree-numbers">
+                                <input class="pluss" type="button" onclick="downValue()" value="-" />
+                                <input class="number "type="text" id="number" value="0"/>
+                                <input class="minus" type="button" onclick="incrementValue()" value="+" />
+                            </div>
+                        </div>
+                        <div class="trees-prise">
+                            <h1 class="tree-prise">$120</h1>
+                        </div>
+                    </div>
+                    <div class="content__checkout-tree">
+                        <div class="trees-img">
+                            <img class="tree-img" src="img/pine.svg" alt="#">
+                        </div>
+                        <div class="trees-name">
+                            <h1 class="tree-title">Pine</h1>
+                            <div class="tree-numbers">
+                                <input class="pluss" type="button" onclick="downValue()" value="-" />
+                                <input class="number "type="text" id="number" value="0"/>
+                                <input class="minus" type="button" onclick="incrementValue()" value="+" />
+                            </div>
+                        </div>
+                        <div class="trees-prise">
+                            <h1 class="tree-prise">$120</h1>
+                        </div>
+                    </div>
+                    <div class="content__checkout-tree">
+                        <div class="trees-img">
+                            <img class="tree-img" src="img/pine.svg" alt="#">
+                        </div>
+                        <div class="trees-name">
+                            <h1 class="tree-title">Pine</h1>
+                            <div class="tree-numbers">
+                                <input class="pluss" type="button" onclick="downValue()" value="-" />
+                                <input class="number "type="text" id="number" value="0"/>
+                                <input class="minus" type="button" onclick="incrementValue()" value="+" />
+                            </div>
+                        </div>
+                        <div class="trees-prise">
+                            <h1 class="tree-prise">$120</h1>
+                        </div>
+                    </div>
+                    <div class="content__checkout-tree">
+                        <div class="trees-img">
+                            <img class="tree-img" src="img/pine.svg" alt="#">
+                        </div>
+                        <div class="trees-name">
+                            <h1 class="tree-title">Pine</h1>
+                            <div class="tree-numbers">
+                                <input class="pluss" type="button" onclick="downValue()" value="-" />
+                                <input class="number "type="text" id="number" value="0"/>
+                                <input class="minus" type="button" onclick="incrementValue()" value="+" />
+                            </div>
+                        </div>
+                        <div class="trees-prise">
+                            <h1 class="tree-prise">$120</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input class="content__checkout-comment" type="text" placeholder="Add comment...">
+            <h1 class="content__checkout-total">Total: </h1>
+            <button class="content__checkout-button">CHECKOUT</button>
+        </div>
+
+
+        <div class="content__center">
+            <div class="content__center-map">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="635" height="568" id="gmap_canvas" src="https://maps.google.com/maps?q=lviv&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe><br>
+                        <a href="https://www.embedgooglemap.net"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content__profile">
+            <h1 class="my-profile">My Profile</h1>
+            <div class="profile">
+                <img class="profile-img" src="img/Ellipse 3.svg" alt="#">
+                <h1 class="profile-name">Roman Panasyuk</h1>
+                <p class="profile-status">plants lover</p>
+            </div>
+            <div class="profile-achivments">
+                <h1 class="recent-title">Recent achivments:</h1>
+                <div class="recentt">
+                    <div class="trees__imgsss">
+                        <img class="tree_imgss" src="img/tree1.svg" alt="#">
+                    </div>
+                    <div class="trees__info">
+                        <p class="info">10 trees were planted in 7 days</p>
+                        <p class="date">05 october 2022</p>
+                    </div>
+                    <div class="trees__nav">
+                        <a class="nav-link" href="#">
+                            <img class="nav" src="img/Vector 1.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="recentt">
+                    <div class="trees__imgsss">
+                        <img class="tree_imgss" src="img/tree2.svg" alt="#">
+                    </div>
+                    <div class="trees__info">
+                        <p class="info">$500 for the environment</p>
+                        <p class="date">17 August 2022</p>
+                    </div>
+                    <div class="trees__nav">
+                        <a class="nav-link" href="#">
+                            <img class="nav" src="img/Vector 1.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<script src="js/index.js"></script>
+</body>
+</html>
