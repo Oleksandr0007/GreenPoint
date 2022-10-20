@@ -13,48 +13,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header1" id="asd">
         <div class="header__container">
-            <div class="header__top"  id="myHeader">
+            <div class="header__top">
                 <a class="header__logo1" href="#">
                     <img class="header__img" src="img/2logo.svg" alt="menu button" >
                 </a>
                 <ul class="header__main">
                     <li class="main__item">
-                        <a class="main__link" href="#">Home</a>
+                        <a class="main__link" id="col" href="#">Home</a>
                     </li>
                     <li class="main__item">
-                        <a class="main__link" href="#">About Us</a>
+                        <a class="main__link" id="col" href="#">About Us</a>
                     </li>
                     <li class="main__item">
-                        <a class="main__link" href="#">Services</a>
+                        <a class="main__link" id="col" href="#">Services</a>
                     </li>
                     <li class="main__item">
-                        <a class="main__link" href="#">Gallery</a>
+                        <a class="main__link" id="col" href="#">Gallery</a>
                     </li>
                     <li class="main__item">
-                        <a class="main__link" href="#">Blog</a>
+                        <a class="main__link" id="col" href="#">Blog</a>
                     </li>
                     <li class="main__item">
-                        <a class="main__link" href="#">Contact</a>
+                        <a class="main__link" id="col" href="#">Contact</a>
                     </li>
                 </ul>
                 <div class="header__buttons2">
-                    <a class="header__buttons1">
-                        <img class="header__profile" src="img/profile.svg" alt="#">
+                    <a class="header__buttons1" href="sign_in.html">
+                        <svg class="header__profile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="img_col" d="M7.99992 1.33334C4.31792 1.33334 1.33325 4.31801 1.33325 8.00001C1.33325 11.682 4.31792 14.6667 7.99992 14.6667C11.6819 14.6667 14.6666 11.682 14.6666 8.00001C14.6666 4.31801 11.6819 1.33334 7.99992 1.33334Z M2.84717 12.2307C2.84717 12.2307 4.33317 10.3333 7.99983 10.3333C11.6665 10.3333 13.1532 12.2307 13.1532 12.2307M7.99983 8C8.53027 8 9.03898 7.78929 9.41405 7.41421C9.78912 7.03914 9.99983 6.53043 9.99983 6C9.99983 5.46957 9.78912 4.96086 9.41405 4.58579C9.03898 4.21071 8.53027 4 7.99983 4C7.4694 4 6.96069 4.21071 6.58562 4.58579C6.21055 4.96086 5.99983 5.46957 5.99983 6C5.99983 6.53043 6.21055 7.03914 6.58562 7.41421C6.96069 7.78929 7.4694 8 7.99983 8V8Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     <a>
                     <a class="header__buttons1">
-                        <img class="header__notification" src="img/codicon.svg" alt="#">
+                        <svg class="header__notification"  width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="img_col1" d="M11.377 9.57301C11.124 8.80499 10.9947 8.00163 10.994 7.19301V5.19501C11.0124 3.929 10.5606 2.70115 9.726 1.74901C8.89425 0.795374 7.73985 0.182206 6.484 0.0270136C5.79 -0.0449864 5.084 0.0270137 4.414 0.254014C3.744 0.469014 3.134 0.828014 2.62 1.30701C2.10344 1.77366 1.69171 2.34455 1.412 2.98201C1.1309 3.61923 0.984177 4.30756 0.981 5.00401V7.20401C0.979534 8.0093 0.850259 8.80925 0.598 9.57401L0 11.343L0.479 12.001H3.984C3.984 12.527 4.199 13.041 4.57 13.413C4.94 13.783 5.455 13.999 5.982 13.999C6.508 13.999 7.022 13.784 7.393 13.413C7.764 13.042 7.98 12.527 7.98 12.001H11.485L11.963 11.343L11.377 9.57301V9.57301ZM6.687 12.72C6.59499 12.8139 6.48534 12.8886 6.36435 12.9399C6.24336 12.9912 6.11342 13.0181 5.982 13.019C5.85034 13.0181 5.72017 12.9911 5.59899 12.9396C5.47782 12.8881 5.36804 12.8132 5.276 12.719C5.18197 12.6271 5.10706 12.5175 5.05557 12.3965C5.00409 12.2755 4.97704 12.1455 4.976 12.014H6.975C6.97917 12.1452 6.95578 12.2758 6.90634 12.3974C6.85691 12.519 6.78253 12.6289 6.688 12.72H6.687ZM1.172 11.01L1.543 9.89601C1.83231 9.02815 1.98185 8.11982 1.986 7.20501V5.00401C1.986 4.44101 2.106 3.89101 2.333 3.38801C2.56 2.87401 2.883 2.41901 3.302 2.04801C3.721 1.66601 4.212 1.37801 4.738 1.21101C5.276 1.03101 5.838 0.971014 6.388 1.03101C7.39601 1.16356 8.32021 1.66178 8.985 2.43101C9.64998 3.2012 10.0075 4.18964 9.989 5.20701V7.21701C9.989 8.12601 10.133 9.03501 10.432 9.90801L10.803 11.021H1.173V11.009L1.172 11.01Z" fill="black"/>
+                        </svg>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="header__content">
-            <div class="header__container">
-                <h1 class="header__content-title">PLANT A TREE & SAVE OUR PLANET</h1>
-                <p class="header__content-text">Elit nibh non dignissim aliquam consectetur varius dictum nulla a. Nibh molestie augue senectus nulla mi. Non arcu, nec euismod diam, semper ut ipsum, nulla lectus. Vel ut morbi mauris, ut est. Elit sed erat sed phasellus nec penatibus sapien. Semper lobortis dui tellus molestie. Ipsum in ut venenatis viverra. Aliquam congue in mauris pharetra magna. Ullamcorper maecenas integer sapien aliquam elit non tellus ut.</p>
-                <button class="header__content-button1">Plant your tree</button>
-                <button class="header__content-button2">Learn more</button>
+    </div>
+    <div class="header2">
+        <div class="header__container">
+            <div class="header__content">
+                <div class="header__container">
+                    <h1 class="header__content-title">PLANT A TREE & SAVE OUR PLANET</h1>
+                    <p class="header__content-text">Elit nibh non dignissim aliquam consectetur varius dictum nulla a. Nibh molestie augue senectus nulla mi. Non arcu, nec euismod diam, semper ut ipsum, nulla lectus. Vel ut morbi mauris, ut est. Elit sed erat sed phasellus nec penatibus sapien. Semper lobortis dui tellus molestie. Ipsum in ut venenatis viverra. Aliquam congue in mauris pharetra magna. Ullamcorper maecenas integer sapien aliquam elit non tellus ut.</p>
+                    <button class="header__content-button1">Plant your tree</button>
+                    <a  href="#one"><button class="header__content-button2">Learn more</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -118,50 +126,52 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="header__container">
-            <div class="footer__inner">
-                <div class="footer__logo">
-                    <h1 class="footer__logo-title">green point</h1>
-                    <p class="footer__logo-text">LIVE IN GREEN</p>
-                    <img class="footer__logo-img" src="img/Ellipse 1.svg" alt="#">
-                </div>
-                <div class="footer__block">
-                    <h1 class="footer__title">Extras</h1>
-                    <a class="footer__link" href="#">Specials</a>
-                    <a class="footer__link" href="#">Contact Us</a>
-                    <a class="footer__link" href="#">Site Map</a>
-                </div>
-                <div class="footer__block">
-                    <h1 class="footer__title">Information</h1>
-                    <a class="footer__link" href="#">About Us</a>
-                    <a class="footer__link" href="#">Become a member</a>
-                    <a class="footer__link" href="#">Terms & Conditions</a>
-                    <a class="footer__link" href="#">Privacy Policy</a>
-                </div>
-                <div class="footer__block">
-                    <h1 class="footer__title">Contact Us</h1>
-                    <a class="footer__link" href="mailto:greenpoint@yourcompany.com">greenpoint@yourcompany.com</a>
-                    <a class="footer__link" href="tel:+380724567892">0724-567-892</a>
-                </div>
-                <div class="footer__media">
-                    <a class="footer__media-link" href="#">
-                        <img class="footer__media-linkk" src="img/instagram.svg" alt="#">
-                    </a>
-                    <a class="footer__media-link" href="#">
-                        <img class="footer__media-linkk" src="img/facebook.svg" alt="#">
-                    </a>
-                    <a class="footer__media-link" href="#">
-                        <img class="footer__media-linkk" src="img/twiter.svg" alt="#">
-                    </a>
-                    <a class="footer__media-link" href="#">
-                        <img class="footer__media-linkk" src="img/tiktok.svg" alt="#">
-                    </a>
+    <footer>
+        <div class="footer">
+            <div class="header__container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <h1 class="footer__logo-title">green point</h1>
+                        <p class="footer__logo-text">LIVE IN GREEN</p>
+                        <img class="footer__logo-img" src="img/Ellipse 1.svg" alt="#">
+                    </div>
+                    <div class="footer__block">
+                        <h1 class="footer__title">Extras</h1>
+                        <a class="footer__link" href="#">Specials</a>
+                        <a class="footer__link" href="#">Contact Us</a>
+                        <a class="footer__link" href="#">Site Map</a>
+                    </div>
+                    <div class="footer__block">
+                        <h1 class="footer__title">Information</h1>
+                        <a class="footer__link" href="#">About Us</a>
+                        <a class="footer__link" href="#">Become a member</a>
+                        <a class="footer__link" href="https://www.termsfeed.com/live/c4ce8e5a-8e0b-434f-ac39-36b66a4b4382">Terms & Conditions</a>
+                        <a class="footer__link" href="https://www.freeprivacypolicy.com/live/0dbb1cf3-b3a4-47e3-8b0f-6f23f9e16b70">Privacy Policy</a>
+                    </div>
+                    <div class="footer__block">
+                        <h1 class="footer__title">Contact Us</h1>
+                        <a class="footer__link" href="mailto:greenpoint@yourcompany.com">greenpoint@yourcompany.com</a>
+                        <a class="footer__link" href="tel:+380724567892">0724-567-892</a>
+                    </div>
+                    <div class="footer__media">
+                        <a class="footer__media-link" href="#">
+                            <img class="footer__media-linkk" src="img/instagram.svg" alt="#">
+                        </a>
+                        <a class="footer__media-link" href="#">
+                            <img class="footer__media-linkk" src="img/facebook.svg" alt="#">
+                        </a>
+                        <a class="footer__media-link" href="#">
+                            <img class="footer__media-linkk" src="img/twiter.svg" alt="#">
+                        </a>
+                        <a class="footer__media-link" href="#">
+                            <img class="footer__media-linkk" src="img/tiktok.svg" alt="#">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-    
+    <script src="js/index.js"></script>
 </body>
 </html>

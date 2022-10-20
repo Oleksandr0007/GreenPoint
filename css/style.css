@@ -14,6 +14,24 @@ body{
 
 /* HEADER STYLES */
 
+.header1, #asd{
+    background-color: #fff;
+    z-index: 999;
+    min-width: 100%;
+    top: 0;
+    position: fixed;
+    transition: background-color 0.5s, top 0.3s;
+}
+
+.header2{
+    background-image: url(../img/unsplash_wVTGdIGdojc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
 ul{
     list-style: none;
 }
@@ -33,6 +51,8 @@ a{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .header__main{
@@ -62,22 +82,38 @@ a{
     margin-left: 70px;
 }
 
-.main__link{
+.main__link, #col{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 12px;
     color: #000;
+    transition: color 0.5s;
+}
+
+#img_col{
+    stroke: #000;
+}
+
+#img_col1{
+    fill: #000;
 }
 
 .main__item:hover{
     transform: scale(1.1);
 }
 
-.header__profile, .header__notification{
+.header__profile{
     height: 22px;
     width: 22px;
+    cursor: pointer;
+}
+
+.header__notification{
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
 }
 
 .header__profile:hover, .header__notification:hover{
@@ -409,11 +445,7 @@ a{
 }
 
 .header__content{
-    background-image: url(../img/unsplash_wVTGdIGdojc.png);
-    min-height: calc(100vh - 70px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -731,10 +763,16 @@ sub{
 /* fOOTER */
 
 
-.footer{
+footer{
     height:346px;
     background-color: #494B4B;
     color: #fff;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 97px;
 }
 
 .footer__inner{
@@ -803,4 +841,149 @@ sub{
     margin-left: 20px;
     width: 11px;
     height: 11px;
+}
+
+/* Sign in*/
+
+.section__login{
+    display: flex;
+    height: 100vh;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.section__signin, .section__enter{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__enter{
+    background: #59A985;
+    border-radius: 10px 0px 0px 10px;
+    color: #fff;
+}
+
+.section__signin-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 94px;
+}
+
+.section__signin-username, .section__signin-password{
+    width: 542px;
+    height: 60px;
+    background: #ededed;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+    border: none;
+    margin-bottom: 28px;
+}
+
+.section__signin-forgotPass{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 11px 0 28px 0;
+}
+
+.section__signin-button, .section__enter-button{
+    border-radius: 50px;
+    height: 60px;
+    width: 200px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section__signin-button{
+    background: #59A985;
+    border: none;
+}
+
+.section__enter-button{
+    border: 1px solid #FFFFFF;
+    background:rgba(0, 0, 0, 0)
+}
+
+.section__enter-title{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.section__enter-subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 40px 0 40px 0;
+}
+
+/* End sign in */
+/* Sign up */
+
+.section__signup{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__signpu-content{
+    width: 542px;
+    margin: 0 auto;
+}
+
+.section__signup-titlebox{
+    display: flex;
+    justify-content: center;
+}
+
+.section__signcontent{
+    min-width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/Frame\ 25.svg);
+    background-color: #59A985;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.section__signcontent-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #494B4B;
+    text-align: center;
+    margin-top: 13vh;
+}
+
+.section__singnup-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 48px;
+}
+
+.section__signin-checkbox{
+    margin-bottom: 30px;
+}
+
+.section__signin-checkbox-input{
+    background-color: #59A985;
 }
