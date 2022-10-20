@@ -8,6 +8,11 @@ html{
     box-sizing: inherit;
 }
 
+:root {
+    --form-control-color: #fff;
+    --form-control-disabled: #59A985;
+  }
+
 body{
     background-color: #F5F5F5;
 }
@@ -946,11 +951,6 @@ footer{
     margin: 0 auto;
 }
 
-.section__signup-titlebox{
-    display: flex;
-    justify-content: center;
-}
-
 .section__signcontent{
     min-width: 50%;
     height: 100vh;
@@ -980,10 +980,65 @@ footer{
     margin-bottom: 48px;
 }
 
+.section__signup-subtitle{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .section__signin-checkbox{
     margin-bottom: 30px;
+    display: flex;
 }
 
 .section__signin-checkbox-input{
     background-color: #59A985;
+    margin-left: 11px;
 }
+
+.int{
+    margin-left: 11px;
+}
+
+/* Checkbox animation */
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+
+    font: inherit;
+    color: #59A985;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #59A985;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #59A985;
+
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: #59A985;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+  /* End Checkbox animation */
