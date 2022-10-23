@@ -1042,3 +1042,180 @@ input[type="checkbox"] {
   }
 
   /* End Checkbox animation */
+/* Profile section */
+.Profile{
+    background-color: #59A985;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.personal__page{
+    width: 100%;
+    display: flex;
+}
+
+.personal__page_section{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 635px;
+    margin: 17px auto 17px;
+}
+
+.personal__page_container{
+    width: 445px;
+    margin: auto;
+}
+
+.personal__page-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 35px;
+}
+
+.personal__page-butn{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #59A985;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: -35px;
+}
+
+.personal__page-plus{
+    margin-bottom: 1.3px;
+    margin-left: -1.3px;
+}
+
+.personal__page_data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.personal__page-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.personal__page-edit{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.personal__page_inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personal__page-input{
+    background: #F2F2F2;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 215px;
+    height: 60px;
+    border: none;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.personal__page-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.personal__page_achievements{
+    margin-top: 18px;
+}
+
+.personal__page_achievements-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.personal__page_achieves{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personal__page_achieve{
+    margin-top: 30px;
+    width: 128px;
+    height: 127px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.personal__page_achieve-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+
+.personal__page_achieve-photo{
+    height: 75%;
+    background-image: url(../img/oak.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#disactive{
+    opacity: 0.5;
+    mix-blend-mode: luminosity;
+}
+
+.personal__page_achieve-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.personal__page_achieve-name{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 10px;
+}
+
+.personal__page_achieve-number{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #368C72;
+    margin-right: 11px;
+}
+
+.personal__page_achieve-more{
+    background-color: #fff;
+    border: 1px solid #368C72;
+    margin-bottom: 35px;
+}
+
+.personal__page-button-save{
+    background-color: #59A985;
+    color: #fff;
+    border: none;
+}
+
+.personal__page-button-save, .personal__page_achieve-more{
+    width: 65px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
