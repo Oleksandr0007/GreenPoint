@@ -1219,3 +1219,46 @@ input[type="checkbox"] {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.section__welcome{
+    background-color: #59A985;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #fff;
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__welcome-content{
+    display: flex;
+}
+
+.section__welcome-title, .section__welcome-username{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 34px;
+
+}
+
+.section__welcome-username{
+    margin-left: 10px;
+}
+
+.section__welcome-subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
